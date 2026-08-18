@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <form id="form1">
+        <h2>Calculadora</h2>
+        <br>
+        <h3>Digite o 1° valor</h3>
+        <input type="text" id="txtn1"/>
+        <br><br/>
+        <h3>Digite o 2° valor</h3> <br><br/>
+        <input type="text" id="txtn2"/>
+        <br><br/>
+        <h3>Resultado</h3> 
+        <input type="text" id="txtresu" disabled/>
+        <br><br/>
+
+        <input type="button" id="botao" value="+" onclick="Calcula('+')">
+        <input type="button" id="botao" value="-" onclick="Calcula('-')">
+        <input type="button" id="botao" value=":" onclick="Calcula(':')">
+        <input type="button" id="botao" value="x" onclick="Calcula('x')">
+        <input type="reset" id="botao" value="LIMPAR" onclick="Limpar()">        
+    </form>
+</body>
+</html>

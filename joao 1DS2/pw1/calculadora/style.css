@@ -1,0 +1,46 @@
+body
+{
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+}
+
+#form1
+{
+    align-items: center;
+    background-color:  rgb(141, 141, 157);
+    border-radius: 60px;
+    box-shadow: rgba(0px, 0px, 0px, 0.5);
+    height: 500px;
+    width: 500px;
+    margin-left: 700px;
+    margin-top: 100px;
+    
+}
+
+h2
+{
+    font-size: 200%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+#txtresu 
+{
+    border-radius: 60px;
+}
+
+#txtn1 
+{
+    border-radius: 60px;
+}
+
+#txtn2
+{
+    border-radius: 60px;
+}
+
+#botao
+{
+    margin-top: 10px;
+    border-radius: 60px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="1">
+        <h4>PREENCHA OS VALORES NUMERICOS DOS COEFICIENTES</h4>
+        <br/><br/>
+        <input type="text" id="a" autofocus/> <span>x2</span>+
+        <input type="text" id="b"/> <span>x</span>+
+        <input type="text" id="c"/> <span>=</span>0
+        <br/><br/>
+        O valor do delta é:
+        <input type="text" id="d" disabled="true"/><BR/><BR/>
+        As raízes reais são:
+        <input type="text" id="x1" disabled="true"/>
+        <input type="text" id="x2" disabled="true"/>
+        <br/><br/>
+        <input type="button" value="Calcular" onClick="Calcular()"/>
+        <input type="reset" value="Clear"/>
+    </form>
+</body>
+</html>

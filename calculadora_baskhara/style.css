@@ -1,0 +1,144 @@
+:root {
+  --azul: #1d3f72;
+  --azul-claro: #e8f0fb;
+  --borda: #b8cbe6;
+  --destaque: #eef39a;
+  --destaque-borda: #b6bd4a;
+  --texto: #1a2432;
+  --erro: #b3261e;
+  --verde: #2e7d32;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 32px 16px;
+  background: #f4f6fa;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: var(--texto);
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid var(--borda);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(29, 63, 114, 0.10);
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  padding: 22px 24px;
+  background: var(--azul);
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.conteudo { padding: 28px 24px 32px; }
+
+.equacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 1.5rem;
+  margin-bottom: 28px;
+}
+
+.equacao input {
+  width: 74px;
+  padding: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 2px solid var(--azul);
+  border-radius: 6px;
+  background: var(--azul-claro);
+  color: var(--texto);
+}
+
+.equacao input:focus {
+  outline: 3px solid #7ea4dc;
+  outline-offset: 1px;
+}
+
+.equacao .termo { font-weight: 600; color: var(--azul); }
+.equacao sup { font-size: 0.7em; }
+
+.resultado {
+  background: #f7f9fc;
+  border: 1px solid var(--borda);
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  min-height: 96px;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 1.05rem;
+}
+
+.linha .rotulo { color: #4a5a70; }
+
+.caixa {
+  display: inline-block;
+  min-width: 60px;
+  padding: 6px 12px;
+  background: var(--destaque);
+  border: 1px solid var(--destaque-borda);
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.caixa.reais { background: #dff0df; border-color: #9ac79c; color: var(--verde); }
+.caixa.sem { background: #fbe3e1; border-color: #e0a29d; color: var(--erro); }
+
+.passo {
+  font-size: 0.92rem;
+  color: #5a6b82;
+  margin: 4px 0 0;
+  font-family: "Consolas", monospace;
+}
+
+.placeholder { color: #90a0b5; font-style: italic; }
+
+.botoes {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+button, input[type="button"], input[type="reset"] {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid var(--azul);
+  transition: transform .05s, background .15s;
+}
+
+button:active, input:active { transform: translateY(1px); }
+
+.calcular, input[type="button"] { background: var(--azul); color: #fff; }
+.calcular:hover, input[type="button"]:hover { background: #16305a; }
+.limpar, input[type="reset"] { background: #fff; color: var(--azul); }
+.limpar:hover, input[type="reset"]:hover { background: var(--azul-claro); }
+
+button:focus-visible, input:focus-visible { outline: 3px solid #7ea4dc; outline-offset: 2px;
+}
